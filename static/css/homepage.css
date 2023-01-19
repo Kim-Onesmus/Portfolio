@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: bisque;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 10px 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px rgb(13, 243, 13);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 30px;
+}
+h1 {
+    text-align: center;
+    width: 100%;
+    padding: 6px;
+}
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+h3 {
+    text-align: center;
+    padding: 20px;
+}
+.rightNav {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    nav-down: auto;
+}
+
+.rightNav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.background {
+    background-color: dodgerblue;
+    height: 80px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+}
+.content {
+    margin-top: 80px;
+}
+.profile {
+    padding: 10px;
+    margin: 0% auto;
+}
+.me {
+    padding: 10px;
+    margin: 0% auto;
+    width: 70%;
+    height: auto;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30);
+    background-color: rgb(223, 219, 219);
+    border-radius: 20px;
+}
+.project {
+    margin: 0 auto;
+    text-align: center;
+}
+.loop {
+    justify-content: center;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 10px;
+}
+.data {
+    flex-basis: 31%;
+    box-sizing: border-box;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30);
+    background-color: rgb(223, 219, 219);
+}
+.data  img {
+    width: 480px;
+    height: 350px;
+    padding: 10px;
+    text-align: center;
+}
+
+.data > a {
+    text-decoration: none;
+    color: blue;
+}
+.reason {
+    padding: 20px;
+}
+.why_web {
+    padding: 20px;
+    margin: 0% auto;
+    width: 40%;
+    height: auto;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30);
+    background-color: rgb(223, 219, 219);
+    border-radius: 20px;
+}
+.works {
+    text-align: center;
+    margin: 0% auto;
+}
+.kimtech {
+    display: inline-block;
+    justify-content: space-between;
+    margin: 10px;
+}
+.paragraph {
+    display: inline-flex;
+    margin: 10px;
+    justify-content: center;
+}
+.paragraph  p {
+    background-color: rgb(223, 219, 219);
+    width: 40%;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 20px;
+}
+.paragraph  img {
+    width: 50%;
+    height: 0%;
+}
+.social_media {
+    padding: 10px;
+    /* font-size: 20px; */
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+.social_media > a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+.social_media p {
+    font-size: 20px;
+}
+.whatsapp {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 60px;
+    width: 60px;
+}
+.whatsapp > a {
+    font-size: 60px;
+    text-decoration: none;
+    color: green;
+}

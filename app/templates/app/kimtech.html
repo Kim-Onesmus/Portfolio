@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/kimtech.css' %}">
+    <link rel="stylesheet" href="{% static 'css/kimquery.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KimTech</title>
+    <link style="width: 128px; height: 128px;" rel="icon" type="image/png" href="{% static 'images/kim1.jpg'%}"/>
+</head>
+<body>
+    <div class="nav-bar">
+        <nav class="navbar background">
+            <ul class="nav-list">
+                <li><a href="/">Home</a></li>
+            </ul>
+            <h1>KimTech</h1>
+            <div class="rightNav">
+                <a href="">Email</a>
+                <a href="">Whatsapp</a>
+            </div>
+        </nav>
+    </div>
+    <div class="whatsapp">
+        <a href="https://wa.me/254792613079?text=Hello Kimanzi"><i class="fa fa-whatsapp"></i></a>
+    </div>
+    <div class="content">
+        <div class="offer">
+            <h2><b>Services we offer</b></h2>
+            <div class="service">
+                <div class="services">
+                    <hr>
+                    <h2><b>Office Installation</b></h2>
+                    <hr>
+                    <h2>Microsoft Packages</h2>
+                    <hr>
+                    <p>
+                        <b>1. </b> Microsoft Word <br>
+                        <b>2. </b> Microsoft Excel <br>
+                        <b>3. </b> Microsoft Powerpoint <br>
+                        <b>4. </b> Microsoft Access <br>
+                    </p>
+                </div>
+                <div class="services">
+                    <hr>
+                    <h2><b>Adobe Installation</b></h2>
+                    <hr>
+                    <h2>Adobe collection</h2>
+                    <hr>
+                    <p>
+                        <b>1. </b> Adobe Photoshop <br>
+                        <b>2. </b> Adobe Illustrator <br>
+                        <b>3. </b> Adobe Indesign <br>
+                        <b>4. </b> Adobe Premier Pro <br>
+                    </p>
+                </div>   
+                <div class="services">
+                    <hr>
+                    <h2><b>OS Installation</b></h2>
+                    <hr>
+                    <h2>Operating Systems</h2>
+                    <hr>
+                    <p>
+                        <b>1. </b> Windows Installation <br>
+                        <b>2. </b> Parrot Installation <br>
+                        <b>3. </b> Linux Installation <br>
+                        <b>4. </b> Ubuntu Installation <br>
+                    </p>
+                </div>
+                <div class="services">
+                    <hr>
+                    <h2><b>Other Services</b></h2>
+                    <hr>
+                    <h2>.......</h2>
+                    <hr>
+                    <p>
+                        <b>1. </b> KRA Pin Application <br>
+                        <b>2. </b> Filling KRA Nil Returns <br>
+                        <b>3. </b> Helb Application <br>
+                        <b>4. </b> Fixing software Issues <br>
+                        <b>5. </b> Some Hardware Repair <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2><b>Location</b></h2>
+        <div class="location">
+            <div class="mapouter">
+                <h2>Ikanga</h2>
+                <div class="gmap_canvas">
+                    <iframe id="gmap_canvas" 
+                        src="https://maps.google.com/maps?q=ikanga%20ithumula&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                    <a href="https://123movies-to.org"></a><br>
+                    <a href="https://www.embedgooglemap.net"></a>
+                </div>
+            </div>
+            <div class="mapouter">
+                <h2>Rongo University</h2>
+                <div class="gmap_canvas">
+                    <iframe  id="gmap_canvas" 
+                        src="https://maps.google.com/maps?q=rongo%20univ&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                    <a href="https://123movies-to.org"></a><br>
+                    <a href="https://www.embedgooglemap.net"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="product">
+            <h2><b><p>
+                You can download some of our products here
+                and have a documentation on how to install them.
+            </p></b></h2>
+            {% for product in products %}
+            <div class="loop">
+                <div class="products">
+                    <img src="{{product.image.url}}"><br>
+                    <p>{{product.name}}</p>
+                    <a href="{% url 'messanges' %}">Download Ksh.{{product.price}}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <hr>
+        <div class="social_media">
+            <p><b>Lets Talk</b></p>
+            Send an 
+            <a href="mailto:kimonesmuske@gmail.com?subject=Hello Kimanzi">Email</a><br>
+            Chat on
+            <a href="https://wa.me/+254792613079?text=Hello Kimanzi">Whatsapp</a><br>
+            Follow me on
+            <a href="https://twitter.com/Kiim844?t=cS1bUFRU1uywTH3Qxh90cA&s=09">Twitter</a><br>
+            Follow me on
+            <a href="https://instagram.com/kim_onesmuske?igshid=ZDdkNTZiNTM=">Instagram</a><br>
+        </div>
+    </div>
+</body>
+</html>

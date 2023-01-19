@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/homequery.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+        Kimanzi
+    </title>
+    <link style="width: 128px; height: 128px;" rel="icon" type="image/png" href="{% static 'images/kim1.jpg'%}"/>
+</head>
+<body>
+    <div class="nav-bar">
+        <nav class="navbar background">
+            <ul class="nav-list">
+                <li><a href="/">Kimanzi</a></li>
+            </ul>
+            <h1>Full Stack Web Developer</h1>
+            <div class="rightNav">
+                <a href="{% url 'kimtech' %}">KimTech</a>
+                <a href="mailto:kimonesmuske@gmail.com?subject=Hello Kimanzi">Email</a>
+                <a href="https://wa.me/+254792613079?text=Hello Kimanzi">Whatsapp</a>
+            </div>
+        </nav>
+    </div>
+    <hr>
+    <div class="content">
+        <h2><b>My profile</b></h2>
+        <div class="profile">
+            <div class="me">
+                <h2><b>Who am i</b></h2>
+                <p>
+                    My name is Onesmus Kimanzi Muimi a third year student at Rongo University takinng Bachelors Degree in
+                    Computer Science. <br> I am a Full stack website developer <br> 
+                    I am capable to build a website using Python, Django framework, HTML5 and CSS3 starting from Portfolio to Ecommerce
+                </p>
+            </div>
+            <!-- <div class="me">
+                <h2><b>My Education</b></h2>
+                <p>2020-2024<br>Rongo University (currently a 3rd year student)</p>
+                <p>2016-2019<br>Kyatune Boys High School</p>
+                <p>2008-2015<br>Wingololi Primary School</p>
+                <p>2005-2007<br>Kithumulani Nursary School</p>
+            </div> -->
+        </div>
+        <hr>
+        <div class="project">
+            <h2><b>My Projects</b></h2>
+            {% for projects in project reversed %}
+            <div class="loop">
+                <div class="data">
+                    <p>{{projects.name}}</p>
+                    <img src="{{projects.image.url}}">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <h3>More of my projects click <a href="https://github.com/Kim-Onesmus">here</a> for my github account</h3>
+        <hr>
+        <h2><b>Why need a website</b></h2>
+        <div class="reason">
+            <div class="why_web">
+                <p>
+                    -A website is a collection of webpages located under a single domain name. <br>
+                    -The webpages contain and display information about
+                    the business or organization and are usually made up of elements such as photos, videos and text.
+                    <br>
+                    <br>
+                    <b><u>Importants of a website</u></b><br>
+                    <b>1.</b> Without a website, people may question your legitimacy as a business. <br> 
+                    <b>2.</b> Having a website is an opportunity to make a great first impression and give people comfort that you have a real business. <br>
+                    <b>3.</b> Showcasing your brand to your prospective customers via a website is one of the most important things that you can do. <br>
+                    <b>4.</b> Having a website makes you look professional and increases trust. <br> 
+                    <b>5.</b> Most people don't trust a business without a good website. <br>
+                    <b>6.</b> A clean, modern page that is regularly updated and pops up in search engines is an instant credibility boost
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="works">
+            <h2><b>KimTech</b></h2>
+            <div class="kimtech">
+                <div class="paragraph">
+                    <p>
+                        I have also a work statation by the name KimTech. During studies we work around 
+                        <a href="https://www.google.com/maps/search/rongo+university/@-0.8250822,34.6070968,17z/data=!3m1!4b1">
+                        Rongo University</a> and during holidays we are at
+                        <a href="https://www.google.com/maps/place/Ikanga/@-1.7261802,38.0718756,16z/data=!3m1!4b1!4m5!3m4!1s0x1824dc3058452f63:0x52091139c4a1a612!8m2!3d-1.7256046!4d38.0763683">
+                        Home grounds</a><br>
+                        We offer the services mentioned in the Poster <br>
+                        You can get some of our services <a href="{% url 'kimtech' %}">here</a> or contact us via 
+                        phone number or social media platforms below. 
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <img src="{% static 'images/posta.jpg'%}">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="social_media">
+            <p><b>Lets Talk</b></p>
+            Send an 
+            <a href="mailto:kimonesmuske@gmail.com?subject=Hello Kimanzi">Email</a><br>
+            Chat on
+            <a href="https://wa.me/+254792613079?text=Hello Kimanzi">Whatsapp</a><br>
+            Follow me on
+            <a href="https://twitter.com/Kiim844?t=cS1bUFRU1uywTH3Qxh90cA&s=09">Twitter</a><br>
+            Follow me on
+            <a href="https://instagram.com/kim_onesmuske?igshid=ZDdkNTZiNTM=">Instagram</a><br>
+        </div>
+        <div class="whatsapp">
+            <a href="https://wa.me/+254792613079?text=Hello Kimanzi"><i class="fa fa-whatsapp"></i></a>
+        </div>
+    </div>
+</body>
+</html>

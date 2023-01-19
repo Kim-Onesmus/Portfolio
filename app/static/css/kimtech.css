@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(243, 201, 201);
+}
+.whatsapp {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 60px;
+    width: 60px;
+}
+.whatsapp > a {
+    font-size: 60px;
+    text-decoration: none;
+    color: green;
+}
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 10px 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px rgb(13, 243, 13);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 30px;
+}
+
+h1 {
+    text-align: center;
+    width: fit-content;
+    padding: 6px;
+}
+h2 {
+    text-align: center;
+}
+.rightNav {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    nav-down: auto;
+}
+
+.rightNav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.background {
+    background-color: dodgerblue;
+    height: 80px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+}
+.content {
+    margin-top: 80px;
+}
+.offer {
+    text-align: center;
+    margin: 0% auto;
+}
+.service {
+    /* justify-content: center; */
+    display: inline-block;
+    justify-content: space-between;
+    margin: 10px;
+}
+.services {
+    display: inline-block;
+    padding: 30px;
+    margin: 10px;
+    width: 40%;
+    height: auto;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30);
+    background-color: rgb(223, 219, 219);
+    border-radius: 20px;
+}
+.location {
+    margin: 0% auto;
+    text-align: center;
+}
+.mapouter {
+    display: inline-block;
+    text-align:center;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:400px;
+    width:400px;
+}
+#gmap_canvas {
+    width: 400px; 
+    height: 400px;
+}
+.product {
+    margin: 0 auto;
+    text-align: center;
+}
+.loop {
+    justify-content: center;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 10px;
+}
+.products {
+    flex-basis: 31%;
+    box-sizing: border-box;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30);
+    background-color: rgb(223, 219, 219);
+    border-radius: 20px;
+}
+.products img {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+.products a {
+    text-decoration: none;
+    font-size: 25px;
+    color: darkblue;
+    text-align: center;
+    padding: 10px;
+}
+.products p {
+    padding-left: 10px;
+}
+.social_media {
+    padding: 10px;
+    /* font-size: 20px; */
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+.social_media > a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+.social_media p {
+    font-size: 20px;
+}
